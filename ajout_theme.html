@@ -1,0 +1,49 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>ajout_theme</title>
+    <link rel="stylesheet" type="text/css" href="monsite.css">
+  </head>
+
+  <body>
+    <div class="MonSite">
+      <!-- Barre latérale à gauche qui fait office de menu à inclure dans tous les fichiers-->
+      <div class="pgauche">
+        <ul>
+          <li><a href="autoecole.html" class="active"><h2>UTDrive</h2></a></li>
+          <li><a href="eleve_consult.php" class="categorie">Élèves</a></li>
+          <li><a href="ajout_eleve.html" class="souscat">Inscrire</a></li>
+          <li><a href="visualisation_calendrier_eleve.php" class="souscat">Calendrier</a></li>
+          <li><a href="theme_consult.php" class="categorie">Thèmes</a></li>
+          <li><a href="ajout_theme.html" class="souscat">Ajouter</a></li>
+          <li><a href="suppression_theme.php" class="souscat">Supprimer</a></li>
+          <li><a href="seance_consult.php" class="categorie">Séances</a></li>
+          <li><a href="ajout_seance.php" class="souscat">Créer</a></li>
+          <li><a href="validation_seance.php" class="souscat">Noter</a></li>
+          <li><a href="inscription_eleve.php" class="souscat">Inscrire un élève</a></li>
+          <li><a href="desinscription_seance.php" class="souscat">Désinscrire</a></li>
+          <li><a href="suppression_seance.php" class="souscat">Supprimer</a></li>
+      </ul>
+    </div>
+    <!--Page de droite-->
+    <div class="pdroite">
+      <!-- Formulaire d'ajout thème où on demande le nom et son descriptif-->
+      <form action="ajouter_theme.php" method="post">
+        <p><h2>Insérer un nouveau thème :</h2></p>
+
+        <label for="nom_theme"><p>Nom du thème :</label>
+        <input type="text" name="nom_theme" placeholder="thème" minlength="2" maxlength="30"  size="30"required></p>
+
+        <label for="description"><p>Description :</label>
+        <textarea name="description" placeholder="descriptif" minlength="2" rows="2" cols="30" required></textarea></p>
+
+        <p><input type="reset" value="Réinitialiser">
+        <input type="submit" value="Enregistrer thème"></p>
+
+      </form>
+    </div>
+  </div>
+
+  </body>
+</html>

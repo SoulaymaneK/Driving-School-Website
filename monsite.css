@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+/*On importe une police de google fonts knowlegde qu'on utilisera pour tout le site*/
+
+/*attributs css qui seront attribués à toutes les balises grâce à * */
+*{
+  margin: 0;/*toutes les marges externes*/
+  padding: 0;/*toutes les marges internes*/
+  box-sizing: border-box;/* Les dimensions en pourcentage seront calculées  partir de la taille du div où il est contenu. */
+  list-style: none;/*les ul et li n'auront pas de puces*/
+  font-family: 'Josefin Sans', serif;
+}
+
+/*Attributs pour la classe Monsite */
+
+.MonSite{
+  background: linear-gradient(#1E77A5,#6AF2D8);/*dégradé linéaire en couleur de fond*/
+  width: 100vw;/* 1OOvw/100vh = 100% de la taille de la fenÃªtre de l'utilisateur. */
+  height: 100vh;
+  display: flex;/*permet de rendre flexible les sous_div et empecher qu'elle s'entremêle*/
+}
+
+/*Attributs pour la classe pgauche, pour le menu de gauche */
+
+.MonSite .pgauche{
+  width: 20%;/*largeur*/
+  height: 100%;/*hauteur*/
+  position: fixed;/*permet de garder la partie gauche fixe */
+}
+
+/*Attributs pour les titre h2 de la classe pgauche */
+
+.MonSite .pgauche h2{
+  color: #fff;/*blanc*/
+  text-transform: uppercase;/*mettre le texte en majuscule*/
+  text-align: center;/*mettre le texte au milieu*/
+}
+
+/*Attributs pour la classe active de la classe pgauche, la barre verticale tout en haut */
+.MonSite .pgauche .active{
+  border-radius: 10px;/*arrondir les bords*/
+  border-top: 2px solid #6AF2D8;/*bordure grise du dessus*/
+  border-bottom: 2px solid #6AF2D8;/*bordure grise du dessous*/
+  border-left: 2px solid #6AF2D8;/*bordure grise de gauche*/
+  border-right: 2px solid #6AF2D8;/*bordure grise de droite*/
+  margin-left: 2%;/*une marge de 2% de la gauche*/
+  margin-top: 2%;/*une marge de 2% du dessus*/
+  width: 99vw;/*étirer sur toute la verticale*/
+  color: #fff;/*blanc*/
+  background: #1E77A5;/*couleur de fond bleu */
+}
+
+/*Attributs pour la classe active de la classe categorie, les   3 catégories du menu à gauche*/
+
+.MonSite .pgauche .categorie{
+  border-radius: 10px;
+  border-left: 2px solid #6AF2D8;
+  border-top: 2px solid #6AF2D8;
+  border-bottom: 2px solid #6AF2D8;
+  border-right: 2px solid #6AF2D8;
+  margin-left: 1.5%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  margin-right: 6%;
+  background: #1E77A5;
+}
+
+/*Attributs pour la classe active de la classe souscat, les sous-catégories des 3 catégories */
+
+.MonSite .pgauche .souscat{
+  border-radius: 10px;
+  border-left: 1.5px solid #6AF2D8;
+  border-top: 1.5px solid #6AF2D8;
+  border-right: 1.5px solid #6AF2D8;
+  border-bottom: 1.5px solid #6AF2D8;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 15px;
+  margin-right: 10%;
+  background: #1E77A5;
+}
+
+/*Attributs pour les différents boutons du menu à gauche*/
+
+.MonSite .pgauche ul a{
+  transition: .5s ease-in-out;/*transition de changement de couleur de fond et de zoom progressif*/
+  margin-right: 3%;
+  margin-bottom: 5px;
+  padding: 13px;
+  color: #fff;
+  display: block;/*les boutons prennent toute la place dispo*/
+  overflow: hidden;/*cache le texte en trop si la page devient trop petite*/
+  border-bottom-right-radius: 10px;
+  text-decoration: none;/*eviter les soulignement de textes*/
+}
+
+/*Attributs pour modifier les boutons lorsque l'utilisateur passe sa souris au dessus*/
+
+.MonSite .pgauche ul a:hover{
+  background-color: #124763;
+  /*#54C1AC*/
+  transform: scale(1.06);/*la transformation grossira la case de 6% */
+  color: #fff;
+}
+
+.MonSite .pgauche .categorie:hover{
+  color: #fff;
+  border-bottom: 2.5px solid #6AF2D8;
+  border-right: 2.5px solid #6AF2D8;
+  border-left: 2.5px solid #6AF2D8;
+  border-top: 2.5px solid #6AF2D8;
+}
+
+
+.MonSite .pgauche .souscat:hover{
+  color: #fff;
+  border-bottom: 2px solid #6AF2D8;
+  border-right: 2px solid #6AF2D8;
+  border-left: 2px solid #6AF2D8;
+  border-top: 2px solid #6AF2D8;
+}
+
+
+
+.MonSite .pdroite{
+  padding: 15px;
+  width: 80%;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  margin-left: 23%;
+  margin-right: 3%;
+  /*background: #BCC0C7;*/
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25;
+  overflow: auto;
+}
+
+.MonSite .pdroite h2{
+  padding: 10px;
+  font-size: 50px;
+  border-radius: 50px;
+  background-color: #BCC0C7;
+  color: #000;
+  text-align: center;
+  margin: 5px;
+}
+
+.MonSite .pdroite p{
+  padding: 10px;
+  font-size: 25px;
+  color: #000;
+  margin: 5px;
+}
+
+.MonSite .pdroite label{
+  padding: 10px;
+  padding-right: 1px;
+  font-size: 20px;
+  color: #000;/*black*/
+  margin-left: 5px;
+}
+
+.MonSite .pdroite img{
+  text-align: center;
+  width: 320px;/*fixe la largeur de l'image*/
+  margin-top: 20px;
+}
+
+.MonSite .pdroite select{
+  font-size: 17px;
+}
+.MonSite .pdroite input{
+  font-size: 17px;
+}
+.MonSite .pdroite textarea{
+  vertical-align: top;/*aligne le texte à l'input*/
+  font-size: 17px;
+}

@@ -1,0 +1,53 @@
+<!--
+
+Voici le site d'auto-école réalisé par KEBLI Soulaymane.
+
+Ce fichier est la page d'accueil de mon site d'auto-école.
+Le detail du désign est détaillé sur ce fichier et sera moins détaillé sur les autres car c'est le même
+
+Il y a 2pages supplémentaires en cliquant sur Thème et Séance
+
+-->
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>autoecole</title>
+    <link rel="stylesheet" type="text/css" href="monsite.css"><!-- on lie le doc à un css pour la mise en forme du style-->
+  </head>
+
+  <body>
+    <!-- On partage le site (un grand div) en deux parties (deux sous-div) :
+				une barre latérale verticale à gauche de 20% et une page à droite sur 80%. -->
+    <div class="MonSite">
+      <!-- Barre latérale à gauche qui fait office de menu à inclure dans tous les fichiers-->
+      <div class="pgauche">
+        <ul>
+          <!-- la classe active correspond à la grande bande et permet de revenir a la page d'acceuil,
+          le menu à gauche est divisé en 3 catégories : Eleves,themes et séance dont chaque catégorie contient
+          des sous-catégories-->
+          <li><a href="autoecole.html" class="active"><h2>UTDrive</h2></a></li>
+          <li><a href="eleve_consult.php" class="categorie">Élèves</a></li>
+          <li><a href="ajout_eleve.html" class="souscat">Inscrire</a></li>
+          <li><a href="visualisation_calendrier_eleve.php" class="souscat">Calendrier</a></li>
+          <li><a href="theme_consult.php" class="categorie">Thèmes</a></li>
+          <li><a href="ajout_theme.html" class="souscat">Ajouter</a></li>
+          <li><a href="suppression_theme.php" class="souscat">Supprimer</a></li>
+          <li><a href="seance_consult.php" class="categorie">Séances</a></li>
+          <li><a href="ajout_seance.php" class="souscat">Créer</a></li>
+          <li><a href="validation_seance.php" class="souscat">Noter</a></li>
+          <li><a href="inscription_eleve.php" class="souscat">Inscrire un élève</a></li>
+          <li><a href="desinscription_seance.php" class="souscat">Désinscrire</a></li>
+          <li><a href="suppression_seance.php" class="souscat">Supprimer</a></li>
+      </ul>
+    </div>
+    <!-- Page de droite-->
+    <div class="pdroite">
+        <h2>Page d'Accueil</h2><br><br>
+          <p>Bienvenue sur le meilleur site d'auto-ecole de l'UTC réalisé par Soulaymane KEBLI.</p><br><br>
+          <img src="208.png"><br><br>
+          <img src="utc.png"><br>
+    </div>
+  </div>
+  </body>
+</html>
